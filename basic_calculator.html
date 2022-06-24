@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <script>
+        function add() {
+            var num1, num2, sum, diff, division, product;
+            num1 = parseFloat(document.getElementById("one").value);
+            num2 = parseFloat(document.getElementById("two").value);
+            sum = num1 + num2;
+            diff = num1 - num2;
+            division = num1 / num2;
+            product = num1 * num2;
+            document.getElementById("answer").value = sum;
+        }
+
+        
+    </script>
+</head>
+<body>
+    <p>Enter the first number: <input id="one"></p>
+    <p>Enter the second number: <input id="two"></p>
+    <button onclick="add()">Add</button>
+    <button onclick="subtract()">Subtract</button>
+    <button onclick="divide()">Divide</button>
+    <button onclick="multiply()">Multiply</button>
+    <p>Answer = <input id="answer"></p>
+</body>
+</html>
